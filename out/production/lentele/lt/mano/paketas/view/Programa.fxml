@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.mano.paketas.controller.Controller">
+    <center>
+        <TableView fx:id="lentele" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="stulpelisNr" prefWidth="75.0" text="Eil. Nr." />
+                <TableColumn fx:id="stulpelisVardas" prefWidth="75.0" text="Vardas" />
+                <TableColumn fx:id="stulpelisAmzius" prefWidth="75.0" text="Amžius" />
+                <TableColumn fx:id="stulpelisUgis" prefWidth="75.0" text="Ūgis" />
+                <TableColumn fx:id="stulpelisSpalva" prefWidth="75.0" text="Spalva" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Button mnemonicParsing="false" onAction="#skaitytkIsFailo" text="Button" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
